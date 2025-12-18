@@ -28,4 +28,4 @@ SDET_2025_TAKE_HOME_ASSIGNMENT
     3.  ui_cases.spec.ts    # Frontend UI test cases
 5.  playwright.config.ts    # Global Playwright configuration
 6.  package.json            # Project dependencies and scripts
-└── .gitignore              # Files excluded from version control
+7. .gitignore              # Files excluded from version control
