@@ -14,8 +14,8 @@ export default class NavbarSection {
 
 
     async logout_account() {
-        let user_icon = this.page.locator(this.user_icon)
-        let logout_btn = this.page.locator(this.logout_btn)
+        let user_icon = await this.page.locator(this.user_icon)
+        let logout_btn = await this.page.locator(this.logout_btn)
         await user_icon.click()
         await logout_btn.click()
 
@@ -23,7 +23,7 @@ export default class NavbarSection {
     }
 
         async click_cart_btn() {
-        let element = this.page.locator(this.cart_btn)
+        let element = await this.page.locator(this.cart_btn)
         await element.click()
 
 

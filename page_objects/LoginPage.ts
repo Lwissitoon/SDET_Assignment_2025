@@ -13,12 +13,12 @@ export default class loginPage {
 
 
     async login_account(user: string, password: string) {
-        let username = this.page.locator(this.user_name)
-        let pass = this.page.locator(this.password)
-        let login_btn = this.page.locator(this.login_btn)
+        let username = await this.page.locator(this.user_name)
+        let pass =await this.page.locator(this.password)
+        let login_btn = await this.page.locator(this.login_btn)
         await username.fill(user)
         await pass.fill(password)
-        login_btn.click()
+        await login_btn.click()
 
 
     }
